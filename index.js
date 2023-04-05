@@ -1,13 +1,26 @@
 function hasTargetSum(array, target) {
-  // Write your algorithm here
+  for (let i = 0; i < array.length; i++){
+    const compliment = target - array[i]
+    for (let j = i + 1; j <array.length; j++){
+      if (array[j] === compliment) return true
+    }
+  }
+  return false
 }
-
+//  If two numbers in the array can be added together to equal the target number, return true
 /* 
   Write the Big O time complexity of your function here
+ runtime: 0(n^2)
+ space: 0(n)
 */
 
 /* 
   Add your pseudocode here
+  function
+  iterate through array 
+  if two numbers in array = target #
+  return true
+  return false
 */
 
 /*
